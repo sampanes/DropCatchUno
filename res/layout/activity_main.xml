@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/mychronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/custom_button1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/timeSize"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/custom_button" />
+
+        <Button
+            android:id="@+id/custom_button0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/timeSize"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/custom_button"/>
+
+        <Button
+            android:id="@+id/custom_button2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/timeSize"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/custom_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/custom_button3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:textSize="@dimen/timeSize"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/custom_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="These buttons represent\nthe sticks. The sticks will\nfall in the order that you\npress them, and will fall\nat time shown. -JS"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/custom_button4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:textSize="@dimen/timeSize"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/custom_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/custom_button5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="4dp"
+            android:textSize="@dimen/timeSize"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/custom_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Press any button to start\nthe timer. Be nice and\nwait several seconds\nbetween drops.\nReset if needed"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/custom_button6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="4dp"
+            android:textSize="@dimen/timeSize"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/custom_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/sendit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send it!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bluetooth_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{bluetooth}" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
